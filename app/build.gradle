@@ -1,0 +1,30 @@
+repositories {
+    maven { url 'https://skyhookwireless.github.io/skyhook-location-android' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.skyhook.locationquickstart"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "5.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.skyhook.location:location-sdk-android:5.0.0-beta3'
+    testImplementation 'junit:junit:4.12'
+}
