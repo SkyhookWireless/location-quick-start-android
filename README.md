@@ -14,7 +14,7 @@ repositories {
 Add SDK to the `dependencies` section:
 ```gradle
 dependencies {
-    implementation 'com.skyhook.location:location-sdk-android:5.0.0-beta3'
+    implementation 'com.skyhook.location:location-sdk-android:5.0+'
 }
 ```
 

@@ -25,6 +25,6 @@ android {
 
 dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.skyhook.location:location-sdk-android:5.0.0-beta3'
+    implementation 'com.skyhook.location:location-sdk-android:5.0+'
     testImplementation 'junit:junit:4.12'
 }
