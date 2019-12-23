@@ -30,6 +30,11 @@ public class MainActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle(String.format(
+            Locale.ROOT,
+            "%s (XPS v%s)",
+            getString(R.string.app_name),
+            XPS.getVersion()));
 
         tv = findViewById(R.id.tv);
         progress = findViewById(R.id.progress);
